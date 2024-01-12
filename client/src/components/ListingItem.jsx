@@ -4,11 +4,11 @@ import { MdLocationOn } from "react-icons/md";
 export default function ListingItem({ listing }) {
   return (
     //overflow hidden is supposed to keep the image inside the card when it zooms
-    <div className="bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[275px]">
+    <div className="bg-white shadow-md hover:shadow-lg transition-shadow overflow-hidden rounded-lg w-full sm:w-[270px]">
       <Link to={`/listing/${listing._id}`}>
         <img
           src={listing.imageUrls[0] || "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?cs=srgb&dl=pexels-binyamin-mellish-106399.jpg&fm=jpg"}
-          className="h-[320] sm:h-[220px] w-full object-cover hover:scale-105 transition-scale duration-300"
+          className="h-[320px] sm:h-[220px] w-full object-cover hover:scale-105 transition-scale duration-300"
           alt={listing.name}
         ></img>
         <div className="p-3 flex flex-col gap-2 w-full">

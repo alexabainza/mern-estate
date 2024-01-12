@@ -116,7 +116,6 @@ export const getListings = async (req, res, next) => {
     next(error);
   }
 };
-
 // export const getListings = async (req, res, next) => {
 //   try {
 //     //if there is a limit, use it, parse it and get a number
